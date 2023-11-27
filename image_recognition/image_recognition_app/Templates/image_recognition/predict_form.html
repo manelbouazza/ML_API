@@ -1,0 +1,20 @@
+<!-- image_recognition/templates/image_recognition/predict_form.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Prediction Form</title>
+</head>
+<body>
+    <h1>Image Prediction Form</h1>
+    
+    <form method="post" action="{% url 'predict_image' %}" enctype="multipart/form-data">
+        
+        <input type="file" name="image" accept="image/*" required>
+        <br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
